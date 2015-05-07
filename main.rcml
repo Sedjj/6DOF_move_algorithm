@@ -76,7 +76,6 @@ function main() {
 }
 function finalAngle(angleServ, anglStart, startServ, angleRange, number) {
 	temp=math::abs(angleServ-anglStart);
-	system::echo("\n temp=",temp,"\n");
     if (angleRange >= 360) {
 		if ((360-temp) < anglStart) {
 			return startServ+temp;
